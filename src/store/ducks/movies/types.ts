@@ -1,0 +1,7 @@
+const SEARCH = 'SEARCH';
+const SEARCH_UPDATE_RESULTS = 'SEARCH_UPDATE_RESULTS';
+
+export default {
+  SEARCH,
+  SEARCH_UPDATE_RESULTS
+};
