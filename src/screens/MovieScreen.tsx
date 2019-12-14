@@ -3,16 +3,11 @@ import { useParams } from "react-router-dom";
 import { serverActions } from '../server';
 import styled from 'styled-components';
 import { ActivityIndicator } from '../components';
+import Image from '../components/Image';
 
 const PosterWrap = styled.div`
   min-width: 30%;
   max-width: 30%;
-`;
-
-const Poster = styled.img`
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
 `;
 
 const Title = styled.span`
@@ -83,7 +78,7 @@ const Movie = () => {
   return (
     <>
       <PosterWrap>
-        <Poster src={data.poster}/>
+        <Image src={data.poster} alt='poster'/>
       </PosterWrap>
       <MovieInfo>
         <Title>{data.title}</Title>
